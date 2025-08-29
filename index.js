@@ -4,8 +4,8 @@ import cors from 'cors'
 dotenv.config();
 const PORT = process.env.PORT|| 3000;
 import connectDB from './libs/db.js';
-import AuthRoutes from './routes/Auth.js';
-import ProductRoutes from './routes/Product.js';
+import AuthRoutes from './routes/auth.js';
+import ProductRoutes from './routes/product.js';
 const app = express();
 connectDB();
 
